@@ -1,4 +1,4 @@
-package com.self.elastic.client.builder;
+package com.self.elasticsearch.client.builder;
 
 import java.io.IOException;
 
@@ -6,8 +6,8 @@ import org.apache.http.HttpHost;
 import org.elasticsearch.client.RestClient;
 import org.elasticsearch.client.RestHighLevelClient;
 
-import com.self.elastic.constants.GlobalConstants;
-import com.self.elastic.exception.ConnectionBuilderException;
+import com.self.elasticsearch.constants.GlobalConstants;
+import com.self.elasticsearch.exception.ConnectionBuilderException;
 
 /**
  * Elastic search client connection

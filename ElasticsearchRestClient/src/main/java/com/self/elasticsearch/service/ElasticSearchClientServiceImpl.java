@@ -1,7 +1,7 @@
-package com.self.elastic.service;
+package com.self.elasticsearch.service;
 
-import com.self.elastic.client.ElasticSearchClientWrapper;
-import com.self.elastic.exception.ElasticSearchServiceException;
+import com.self.elasticsearch.client.ElasticSearchClientWrapper;
+import com.self.elasticsearch.exception.ElasticSearchServiceException;
 
 /**
  * Elastic search client service implementation.

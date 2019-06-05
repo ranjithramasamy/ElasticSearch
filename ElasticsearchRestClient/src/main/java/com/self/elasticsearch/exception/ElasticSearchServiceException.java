@@ -1,4 +1,4 @@
-package com.self.elastic.exception;
+package com.self.elasticsearch.exception;
 
 /**
  * Custom exception handler for service layer.

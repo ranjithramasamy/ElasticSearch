@@ -1,4 +1,4 @@
-package com.self.elastic.client;
+package com.self.elasticsearch.client;
 
 import java.io.IOException;
 import java.util.UUID;
@@ -12,12 +12,12 @@ import org.elasticsearch.action.index.IndexRequest;
 import org.elasticsearch.client.RequestOptions;
 import org.elasticsearch.common.xcontent.XContentType;
 
-import com.self.elastic.client.builder.ConnectionBuilder;
-import com.self.elastic.client.builder.IndexBuilder;
-import com.self.elastic.constants.GlobalConstants;
-import com.self.elastic.exception.ConnectionBuilderException;
-import com.self.elastic.exception.ElasticSearchServiceException;
-import com.self.elastic.exception.IndexBuilderException;
+import com.self.elasticsearch.client.builder.ConnectionBuilder;
+import com.self.elasticsearch.client.builder.IndexBuilder;
+import com.self.elasticsearch.constants.GlobalConstants;
+import com.self.elasticsearch.exception.ConnectionBuilderException;
+import com.self.elasticsearch.exception.ElasticSearchServiceException;
+import com.self.elasticsearch.exception.IndexBuilderException;
 
 /**
  * Elastic search actions such as create, read and update documents
@@ -43,7 +43,7 @@ public class ElasticSearchClientWrapper {
 
 			if (!createIndexResponse.isAcknowledged()) {
 				throw new ElasticSearchServiceException(
-						"Failed to create a new index to elastic search. Please try after sometime.");
+						String.format("Failed to create a new index [%s] to elastic search. Please try after sometime.", GlobalConstants.INDEX_NAME));
 			}
 		} catch (IndexBuilderException | IOException ex) {
 			closeConnection();
@@ -65,7 +65,7 @@ public class ElasticSearchClientWrapper {
 		} catch (IOException ex) {
 			closeConnection();
 			throw new ElasticSearchServiceException(
-					"Exception occurred while checking whether given index exists in elastic search.", ex);
+					String.format("Exception occurred while checking the given index [%s] exists in elastic search.", GlobalConstants.INDEX_NAME), ex);
 		}
 	}
 
@@ -74,7 +74,7 @@ public class ElasticSearchClientWrapper {
 		BulkRequest request = new BulkRequest();
 		
 		request.add(new IndexRequest(GlobalConstants.INDEX_NAME, GlobalConstants.DOCUMENT_TYPE, uniqueID)
-				.source(XContentType.JSON, "message", "trying out Elasticsearch 1"));
+				.source(XContentType.JSON, "message", "trying out Elasticsearch 10155"));
 
 		try {
 			BulkResponse bulkResponse = ConnectionBuilder.getConnection().bulk(request, RequestOptions.DEFAULT);

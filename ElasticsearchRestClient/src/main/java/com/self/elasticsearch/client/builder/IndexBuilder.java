@@ -1,4 +1,4 @@
-package com.self.elastic.client.builder;
+package com.self.elasticsearch.client.builder;
 
 import java.io.IOException;
 
@@ -7,8 +7,8 @@ import org.elasticsearch.common.settings.Settings.Builder;
 import org.elasticsearch.common.xcontent.XContentBuilder;
 import org.elasticsearch.common.xcontent.XContentFactory;
 
-import com.self.elastic.constants.GlobalConstants;
-import com.self.elastic.exception.IndexBuilderException;
+import com.self.elasticsearch.constants.GlobalConstants;
+import com.self.elasticsearch.exception.IndexBuilderException;
 
 /**
  * Schema definition of index

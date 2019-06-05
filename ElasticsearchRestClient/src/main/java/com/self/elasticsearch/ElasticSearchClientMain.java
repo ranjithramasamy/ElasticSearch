@@ -1,7 +1,7 @@
-package com.self.elastic;
+package com.self.elasticsearch;
 
-import com.self.elastic.service.ElasticSearchClientService;
-import com.self.elastic.service.ElasticSearchClientServiceImpl;
+import com.self.elasticsearch.service.ElasticSearchClientService;
+import com.self.elasticsearch.service.ElasticSearchClientServiceImpl;
 
 public class ElasticSearchClientMain {
 

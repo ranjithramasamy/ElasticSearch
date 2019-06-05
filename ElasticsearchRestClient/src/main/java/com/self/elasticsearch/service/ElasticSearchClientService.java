@@ -1,4 +1,4 @@
-package com.self.elastic.service;
+package com.self.elasticsearch.service;
 
 /**
  * Elastic search client service

@@ -1,4 +1,4 @@
-package com.self.elastic.constants;
+package com.self.elasticsearch.constants;
 
 /**
  * Global Constants
