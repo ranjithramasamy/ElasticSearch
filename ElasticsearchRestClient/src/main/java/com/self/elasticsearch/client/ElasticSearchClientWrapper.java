@@ -46,7 +46,6 @@ public class ElasticSearchClientWrapper {
 						String.format("Failed to create a new index [%s] to elastic search. Please try after sometime.", GlobalConstants.INDEX_NAME));
 			}
 		} catch (IndexBuilderException | IOException ex) {
-			closeConnection();
 			throw new ElasticSearchServiceException("Exception occurred while creating an index to elastic search.",
 					ex);
 		}
@@ -63,7 +62,6 @@ public class ElasticSearchClientWrapper {
 
 			return ConnectionBuilder.getConnection().indices().exists(request, RequestOptions.DEFAULT);
 		} catch (IOException ex) {
-			closeConnection();
 			throw new ElasticSearchServiceException(
 					String.format("Exception occurred while checking the given index [%s] exists in elastic search.", GlobalConstants.INDEX_NAME), ex);
 		}
@@ -85,7 +83,6 @@ public class ElasticSearchClientWrapper {
 			}
 
 		} catch (IOException ex) {
-			closeConnection();
 			throw new ElasticSearchServiceException(
 					"Exception occurred while indexing bulk document(s) to elastic search.", ex);
 		}
