@@ -1,9 +1,9 @@
-package com.self.utility;
+package com.self.elasticsearch.utility;
 
 import java.io.FileNotFoundException;
 import java.net.URL;
 
-import com.self.constants.GlobalConstants;
+import com.self.elasticsearch.constants.GlobalConstants;
 
 /**
  * Common utility

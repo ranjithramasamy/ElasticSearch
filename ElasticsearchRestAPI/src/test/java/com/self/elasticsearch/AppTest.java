@@ -1,4 +1,4 @@
-package com.self.elastic.elasticrestapi;
+package com.self.elasticsearch;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

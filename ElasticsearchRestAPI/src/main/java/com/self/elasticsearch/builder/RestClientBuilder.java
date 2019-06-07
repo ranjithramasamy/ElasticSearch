@@ -4,7 +4,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Map;
 
-import com.self.constants.GlobalConstants;
+import com.self.elasticsearch.constants.GlobalConstants;
 import com.self.elasticsearch.exception.ElasticSearchDocumentProcessorException;
 
 import io.restassured.RestAssured;

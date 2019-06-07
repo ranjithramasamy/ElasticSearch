@@ -1,4 +1,4 @@
-package com.self.loader;
+package com.self.elasticsearch.loader;
 
 import java.io.FileInputStream;
 import java.io.IOException;

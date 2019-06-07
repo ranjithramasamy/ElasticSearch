@@ -5,8 +5,8 @@ import java.util.Map;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
-import com.self.constants.GlobalConstants;
 import com.self.elasticsearch.builder.RestClientBuilder;
+import com.self.elasticsearch.constants.GlobalConstants;
 import com.self.elasticsearch.exception.ElasticSearchDocumentProcessorException;
 import com.self.elasticsearch.stream.IndexMappingReader;
 import com.self.elasticsearch.stream.LogFileReader;

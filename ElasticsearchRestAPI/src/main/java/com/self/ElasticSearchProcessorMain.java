@@ -3,7 +3,7 @@ package com.self;
 import java.io.FileNotFoundException;
 
 import com.self.elasticsearch.ElasticSearchDocumentProcessor;
-import com.self.utility.CommonUtils;
+import com.self.elasticsearch.utility.CommonUtils;
 
 public class ElasticSearchProcessorMain {
 

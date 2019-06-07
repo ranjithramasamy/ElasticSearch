@@ -1,6 +1,6 @@
-package com.self.constants;
+package com.self.elasticsearch.constants;
 
-import com.self.loader.PropertyLoader;
+import com.self.elasticsearch.loader.PropertyLoader;
 
 /**
  * Global constants
