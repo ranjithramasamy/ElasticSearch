@@ -1,0 +1,119 @@
+{
+  "aliases": {},
+  "mappings": {
+    "test-case-execution-result": {
+      "properties": {
+        "category": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "error_message": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "is_comparison_required_for_tc": {
+          "type": "boolean"
+        },
+        "job_id": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "platform": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "result": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "run_trigger_time": {
+          "type": "date",
+          "format": "yyyy-MM-dd hh:mm:ss.SSS Z"
+        },
+        "subcategory": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "tc_execution_time": {
+          "type": "date",
+          "format": "yyyy-MM-dd hh:mm:ss.SSS Z"
+        },
+        "tc_number": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "test_suite": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "time_taken_in_secs": {
+          "type": "double"
+        },
+        "user_name": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "user_role": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        }
+      }
+    }
+  },
+  "settings": {
+    "index": {
+      "number_of_shards": "3",
+      "number_of_replicas": "1"
+    }
+  }
+}
